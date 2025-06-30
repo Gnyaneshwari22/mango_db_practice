@@ -89,7 +89,7 @@ exports.getProducts = (req, res, next) => {
     })
     .catch((err) => console.log(err));
 };
-
+// delete product functionality added
 exports.postDeleteProduct = (req, res, next) => {
   const prodId = req.body.productId;
   Product.deleteById(prodId)
